@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" ng-app="mpfront">
+<head>
+    <title>Market Processor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="webjars/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen"></link>
+    <link href="webjars/bootstrap-tagsinput/0.6.1/bootstrap-tagsinput.css" rel="stylesheet" media="screen"></link>
+
+</head>
+<body ng-controller="MainCtrl">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h2>
+                    Market Processor
+                </h2>
+
+                <h3>Recent Data Map(will be visible afterpost)</h3>
+                <div align="center" google-chart="" chart="chart"></div>
+                <hr></hr>
+                <h3>Recent data</h3>
+                <table class="table" ng-module="recentMessage">
+                    <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>userID</td>
+                        <td>Currency From</td>
+                        <td>Currency To</td>
+                        <td>Amount Sell</td>
+                        <td>Amount Buy</td>
+                        <td>Rate</td>
+                        <td>Time Placed</td>
+                        <td>originating Country</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{recentMessage.userId}}</td>
+                        <td>{{recentMessage.currencyFrom}}</td>
+                        <td>{{recentMessage.currencyTo}}</td>
+                        <td>{{recentMessage.amountSell}}</td>
+                        <td>{{recentMessage.amountBuy}}</td>
+                        <td>{{recentMessage.rate}}</td>
+                        <td>{{recentMessage.timePlaced}}</td>
+                        <td>{{recentMessage.originatingCountry}}</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+                <h3>Historical Data</h3>
+                <table class="table" ng-repeat="tradeMessage in tradeMesssageList">
+                    <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>userID</td>
+                        <td>Currency From</td>
+                        <td>Currency To</td>
+                        <td>Amount Sell</td>
+                        <td>Amount Buy</td>
+                        <td>Rate</td>
+                        <td>Time Placed</td>
+                        <td>originating Country</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">{{$index+1}}</th>
+                        <td>{{tradeMessage.userId}}</td>
+                        <td>{{tradeMessage.currencyFrom}}</td>
+                        <td>{{tradeMessage.currencyTo}}</td>
+                        <td>{{tradeMessage.amountSell}}</td>
+                        <td>{{tradeMessage.amountBuy}}</td>
+                        <td>{{tradeMessage.rate}}</td>
+                        <td>{{tradeMessage.timePlaced}}</td>
+                        <td>{{tradeMessage.originatingCountry}}</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="webjars/angularjs/1.2.13/angular.js"></script>
+<script src="webjars/restangular/1.5.1/dist/restangular.js"></script>
+<script src="webjars/underscorejs/1.8.3/underscore.js"></script>
+<script src="webjars/angular-route/1.5.3/angular-route.js"></script>
+<script src="webjars/angular-google-chart/0.1.0/ng-google-chart.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/mainctrl.js"></script>
+
+</body>
+</html>
