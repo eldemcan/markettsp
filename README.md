@@ -54,6 +54,7 @@ Front end is an angular application which uses RestAngular library to make restf
 
 ##Running
 -Project is a spring boot application. It can be imported into inteliji idea IDE
+-RabbitMQ and MongoDB are required
 
 
 ##Things to improve
