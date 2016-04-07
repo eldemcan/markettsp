@@ -9,7 +9,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @ComponentScan({"mp.consumer", "mp.producer"})
 @EnableMongoRepositories
 public class CfmtpApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(CfmtpApplication.class, args);
 	}
