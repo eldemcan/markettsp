@@ -6,9 +6,6 @@ import mp.producer.com.cfp.service.ProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by i308760 on 30/03/2016.
- */
 
 @Service
 public class ProducerServiceImpl implements ProducerService {

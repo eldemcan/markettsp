@@ -14,9 +14,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 
-/**
- * Created by i308760 on 30/03/2016.
- */
 
 @Component
 public class ProducerFacadeImpl implements ProducerFacade

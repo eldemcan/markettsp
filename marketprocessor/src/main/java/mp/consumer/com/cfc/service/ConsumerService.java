@@ -6,11 +6,6 @@ import mp.producer.com.cfp.data.TradeMessageEntity;
 
 import java.util.List;
 
-/**
- * Created by i308760 on 02/04/2016.
- */
-
-
 public interface ConsumerService {
 
     List<TradeMessageEntity> findAllMessages();

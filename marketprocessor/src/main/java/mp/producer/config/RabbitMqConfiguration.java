@@ -18,10 +18,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 
-/**
- * Created by i308760 on 30/03/2016.
- */
-
 @Configuration
 public class RabbitMqConfiguration
 {

@@ -6,9 +6,6 @@ import mp.producer.com.cfp.data.TradeMessageData;
 
 import java.util.List;
 
-/**
- * Created by i308760 on 02/04/2016.
- */
 public interface ConsumerFacade {
 
     List<TradeMessageData> findAllMessages();

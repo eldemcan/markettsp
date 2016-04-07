@@ -7,9 +7,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.util.Date;
 
 
-/**
- * Created by i308760 on 30/03/2016.
- */
 
 @Document
 public class TradeMessageEntity

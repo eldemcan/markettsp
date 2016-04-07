@@ -4,9 +4,6 @@ import mp.producer.com.cfp.data.TradeMessageEntity;
 
 import java.util.List;
 
-/**
- * Created by i308760 on 30/03/2016.
- */
 public interface ConsumerTradeMessageDao {
       List<TradeMessageEntity> findAllMessages();
       boolean insertMessage(TradeMessageEntity tradeMessageEntity);

@@ -13,10 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 
-/**
- * Created by i308760 on 30/03/2016.
- */
-
 @RestController
 @RequestMapping("/api")
 public class ProducerController

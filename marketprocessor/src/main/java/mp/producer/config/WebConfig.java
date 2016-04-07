@@ -11,10 +11,6 @@ import org.thymeleaf.templateresolver.ITemplateResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 import org.thymeleaf.templateresolver.TemplateResolver;
 
-
-/**
- * Created by i308760 on 02/04/2016.
- */
 @Configuration
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter

@@ -8,9 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by i308760 on 30/03/2016.
- */
 
 @Component
 public class TradeMessageDaoImpl implements TradeMessageDao {

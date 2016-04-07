@@ -10,11 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
-/**
- * Created by i308760 on 02/04/2016.
- */
-
 @Service
 public class ConsumerServiceImpl implements ConsumerService
 {

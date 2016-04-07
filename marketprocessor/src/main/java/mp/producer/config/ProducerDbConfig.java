@@ -9,9 +9,6 @@ import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-/**
- * Created by i308760 on 08/02/2016.
- */
 @Configuration
 @EnableMongoRepositories(" mp.producer.com.cfp.dao.repo.*")
 public class ProducerDbConfig extends AbstractMongoConfiguration {
