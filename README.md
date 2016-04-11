@@ -1,4 +1,4 @@
-###Market Processor
+###Market Processor [![Build Status](https://travis-ci.org/eldemcan/markettsp.svg?branch=master)](https://travis-ci.org/eldemcan/markettsp)
 
 
 ##Front end 
