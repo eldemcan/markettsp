@@ -58,7 +58,7 @@ Front end is an angular application which uses RestAngular library to make restf
 
 
 ##Things to improve
--Finalize travis CI configuration
+-Finalize travis CI configuration (done)
 
 -Implement Websocket instead of pooling for UI
 
