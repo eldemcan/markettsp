@@ -5,5 +5,5 @@ jdk:
 
 script:
   - jdk_switcher use oraclejdk8
-  - mvn clean install
-  - mvn test
+  - mvn clean install -f ./marketprocessor/
+  - mvn test -f ./marketprocessor
